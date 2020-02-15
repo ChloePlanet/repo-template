@@ -1,0 +1,20 @@
+name: Test Linux
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  test-linux:
+    name: Test Linux
+    runs-on: ubuntu-latest
+    steps:
+      # TODO: Add test steps here.
+      # GitHub Actions workflow syntax docs: https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
+      # GitHub Actions MarketPlace: https://github.com/marketplace
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@master

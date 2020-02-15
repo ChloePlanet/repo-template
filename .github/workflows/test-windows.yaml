@@ -1,0 +1,20 @@
+name: Test Windows
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  test-windows:
+    name: Test Windows
+    runs-on: windows-latest
+    steps:
+      # TODO: Add test steps here.
+      # GitHub Actions workflow syntax docs: https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
+      # GitHub Actions MarketPlace: https://github.com/marketplace
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@master
